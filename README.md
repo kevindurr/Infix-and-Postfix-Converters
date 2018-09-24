@@ -1,4 +1,4 @@
-# Infix and Postfix Converter
+# Infix and Postfix Converters
 **Binary Tree and Its Application**
 
 Educational Objectives: Gain experience with a binary tree and its application in converting postfix expressions into infix expressions, as well as practice with developing recursive algorithms.
