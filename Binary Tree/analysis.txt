@@ -1,0 +1,16 @@
+Analyze the worst-case time complexity of the private member function makeEmpty(BinaryNode* & t) of the binary expression tree. Give the complexity in the form of Big-O.
+
+void BET::makeEmpty(BinaryNode *&t) //Textbook page 141 figure 4.27.
+{
+    if (t != nullptr)
+    {
+        makeEmpty(t->left);         //touches each left node
+        makeEmpty(t->right);        //touches each right node
+        delete t;                   //O(1)
+    }
+    t = nullptr;                    //O(1)
+}
+
+Just because it's a binary search tree, does not mean it will be O(log(n)). 
+The makeEmpty function is a post order traversal which travels each node of the tree with constant time work each node.
+Therefore the runtime is linear. O(n) where n is the size of the tree. 

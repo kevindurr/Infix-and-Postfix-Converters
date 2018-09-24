@@ -1,0 +1,10 @@
+Big O for a vector implementation Stack.clear(): O(n).
+
+The complexity for Stack.clear() in this instance takes after the underlying adaptee class, <vector>. 
+void Vector.clear() removes all elements from the vector.
+The vector will have to parse the entire size of the array in order to clear each element. 
+Vector with size 'n' will be upperly bound by n. O(n).
+The clear is linear in terms of n which is O(n).
+What if the size is 1? This is a best case scenario which means the lower bounds is Big Omega(1). 
+We care about Big O, the upper bounds, so O(n) is the answer for a vector implementation of Stack.clear().
+
